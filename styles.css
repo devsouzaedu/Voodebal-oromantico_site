@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #ED2939 !important;
+}
+
+.navbar.navbar-light {
+    background-color: #ED2939 !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-logo {
+    max-height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento à direita do logotipo */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-card {
+    width: calc(25% - 20px); /* Alterado para 25% para acomodar 4 imagens em cima e 2 embaixo */
+    margin: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 55%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.image-card h2, .image-card h3 {
+    margin: 5px 0;
+    font-size: 16px; /* Alterado o tamanho da fonte do h2 */
+    word-wrap: break-word;
+}
+
+.image-card h3 {
+    margin: 5px 0;
+    font-size: 12px;
+    word-wrap: break-word; /* Adiciona quebra de palavra para evitar invasão de espaço */
+}
+
+
+.image-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: xx-large; /* Tamanho do h1 */
+}
+
+.subtitle {
+    font-size: 15px; /* Tamanho do h3 */
+    color: #4a4a4a
+}
+
+.title, .subtitle, .titledepos, .galleriatitle{
+    text-align: center;
+    margin: 20px 20px;
+    
+}
+
+.divpai {
+    position: relative;
+    height: 500px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.697); /* Cor preta semitransparente */
+    z-index: 2;
+}
+
+.imagem-de-fundo {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+}
+
+.conteudo h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.conteudo h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.botoes button {
+    margin: 10px 10px;
+}
+
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    display: none;
+    text-align: center;
+    position: relative;
+    max-width: 40%; /* Defina o tamanho máximo desejado */
+    margin: 0 auto;
+    overflow: hidden; /* Adicionei esta propriedade para garantir que a imagem não ultrapasse o tamanho máximo */
+}
+
+.testimonial-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+}
+
+.swiper-slide .testimonial-slide {
+    max-width: 100%;
+}
+
+.weeks {
+    font-size: 14px;
+    color: #888;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.swiper-slide-img {
+    width: 80px; /* Largura desejada */
+    height: 80px; /* Altura desejada */
+    border-radius: 50%; /* Cria um frame redondo */
+    overflow: hidden; /* Garante que a imagem esteja contida no quadro redondo */
+    margin: 0 auto; /* Centraliza a imagem no slide */
+}
+
+.swiper-slide-img img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Elimina espaços indesejados abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+}
+
+.testimonial {
+    font-size: 14px;
+    margin-left:  30%;
+    margin-right:  30%;
+}
+
+.agendaragora {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.agendaragora .agend_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.agendaragora .overlay_agend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.716);
+    z-index: 2;
+}
+
+.contentdiv4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center; /* Adiciona centralização de texto */
+}
+
+.contentdiv4 h1, .contentdiv4 h2, .contentdiv4 button {
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaçamento vertical */
+    max-width: 80%; /* Largura máxima desejada para os textos */
+}
+
+.contentdiv4 h1 {
+    font-size: 2em; /* Tamanho desejado para h1 (pode ajustar conforme necessário) */
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaçamento vertical */
+}
+
+.contentdiv4 h2 {
+    font-size: 16px; /* Tamanho desejado para h2 */
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaçamento vertical */
+}
+
+.contentdiv4 button {
+    margin: 10px auto; /* Mantido o espaçamento para o botão */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    background-image: url('/media/whatsapp-512.png'); /* Adiciona o ícone do lado esquerdo */
+    background-repeat: no-repeat;
+    background-size: 20px; /* Ajuste conforme necessário */
+    background-position: 10px center; /* Ajuste conforme necessário */
+    padding-left: 40px; /* Adiciona espaçamento à esquerda do texto do botão */
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.imggaleriacasais {
+    width: calc(25% - 8px); /* 25% para acomodar 4 colunas, 8px de margem entre as imagens */
+    margin: 4px;
+    text-align: center;
+}
+
+.imggaleriacasais img {
+    width: 100%;
+    height: auto;
+     /* Borda arredondada */
+}
+
+
+.footer {
+    background-color: #ED2939; /* Vermelho imperial */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-size: cover;
+}
+
+.tiktok {
+    background-image: url('media/tiktok_3116491.png');
+}
+
+.instagram {
+    background-image: url('media/instagram_4138164.png');
+}
+
+.whatsapp {
+    background-image: url('media/whatsapp_5969035.png');
+}
+
+
+@media (max-width: 767px) {
+    .image-card {
+      width: 100%; /* Altera a largura para ocupar a largura total da tela em telas menores */
+      margin: 10px 0; /* Adiciona espaçamento superior e inferior entre os cards */
+    }
+  
+    .image-card img {
+      width: 60%; /* Faz com que a imagem ocupe 100% da largura do card */
+      border-radius: 0; /* Remove a borda arredondada da imagem */
+    }
+
+    .imggaleriacasais {
+        width: calc(50% - 8px); /* 50% para acomodar 2 colunas, 8px de margem entre as imagens */
+        margin: 4px;
+      }
+
+      .testimonial {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 2%;
+      }
+      
+      .imagem-de-fundo {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+  }
+  
